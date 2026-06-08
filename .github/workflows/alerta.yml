@@ -13,9 +13,11 @@ steps:
 - name: Descargar repositorio 
 uses: actions/checkout@v4 
 
+steps:
 - name: Ejecutar programa Hola Mundo 
 run:  node app.js 
 
+steps:
 - name: Enviar notificacion a ntfy 
 run: | 
 curl -H "Title: Nuevo Push" \ 
